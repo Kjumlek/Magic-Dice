@@ -33,13 +33,14 @@ function activateSky() {
     for ( i = 0; i < skyPoints.length; i++) {
         skyPoints[i].style.opacity = "0";
     }
-    document.getElementsByClassName("front")[0].style.backgroundImage = "url('cubemap2.png')";
-    document.getElementsByClassName("left")[0].style.backgroundImage = "url('cubemap1.png')";
-    document.getElementsByClassName("right")[0].style.backgroundImage = "url('cubemap3.png')";
-    document.getElementsByClassName("back")[0].style.backgroundImage = "url('cubemap0.png')";
-    document.getElementsByClassName("top")[0].style.backgroundImage = "url('cubemap5.png')";
-    document.getElementsByClassName("floor")[0].style.backgroundImage = "url('cubemap4.png')";
+    document.getElementsByClassName("front")[0].style.backgroundImage = "url('https://i.ibb.co/8b6tYf1/cubemap2.png')";
+    document.getElementsByClassName("left")[0].style.backgroundImage = "url('https://i.ibb.co/SJzq3pN/cubemap1.png')";
+    document.getElementsByClassName("right")[0].style.backgroundImage = "url('https://i.ibb.co/N28qy98/cubemap3.png')";
+    document.getElementsByClassName("back")[0].style.backgroundImage = "url('https://i.ibb.co/gS1VGfh/cubemap0.png')";
+    document.getElementsByClassName("top")[0].style.backgroundImage = "url('https://i.ibb.co/4TgVHwS/cubemap5.png')";
+    document.getElementsByClassName("floor")[0].style.backgroundImage = "url('https://i.ibb.co/wygNDwZ/cubemap4.png')";
     document.getElementsByClassName("container")[0].style.perspective = "100px";
+    
     //konamiCode = [0];
     document.querySelector('body').style.backgroundColor = "black";
 }
