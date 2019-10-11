@@ -1,0 +1,218 @@
+body{
+    background-color: #28aef9;
+    padding : 0;
+    margin: 0;
+}
+h1, p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+p{
+    font-size: 30px;
+    text-align: center;
+}
+#box-text{
+    margin: 40px;
+}
+#animateTool{
+    animation: colorChange 2s ease; 
+}
+@keyframes colorChange{
+    0% {background-color: #28aef9;}
+    1% {background-color: red;}
+    100% {background-color: #28aef9;}
+}
+#animateTool2{
+    animation: colorChange2 2s ease; 
+}
+@keyframes colorChange2{
+    0% {background-color: #28aef9;}
+    1% {background-color: green;}
+    100% {background-color: #28aef9;}
+}
+.container{
+    flex-direction: column;
+    height: 660px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    animation: charge 8s ease;
+    transform-style: preserve-3d;
+}
+@keyframes charge{
+    from {perspective: 10px;}
+    to {perspective: 1000px;}
+}
+.container *{
+    margin: auto;
+}
+#dice{
+    height: 250px;
+    width: 250px;
+    position: relative;
+    
+    transform-style: preserve-3d;
+    animation: loop 7s linear infinite;
+    transform: rotateY(360deg) rotateX(360deg);
+}
+@keyframes loop{
+    from{transform: rotateY(0deg) rotateX(0deg);}
+    to{transform: rotateY(360deg) rotateX(360deg);}
+}
+@keyframes loop2{
+    from{transform: rotateY(0deg) rotateX(0deg);}
+    to{transform: rotateY(180deg) rotateX(360deg);}
+}
+@keyframes loop3{
+    from{transform: rotateY(0deg) rotateX(0deg);}
+    to{transform: rotateY(90deg) rotateX(360deg);}
+}
+@keyframes loop4{
+    from{transform: rotateY(0deg) rotateX(0deg);}
+    to{transform: rotateY(360deg) rotateX(90deg);}
+}
+@keyframes loop5{
+    from{transform: rotateY(0deg) rotateX(0deg);}
+    to{transform: rotateY(270deg) rotateX(360deg);}
+}
+@keyframes loop6{
+    from{transform: rotateY(0deg) rotateX(0deg);}
+    to{transform: rotateY(360deg) rotateX(270deg);}
+}
+.face{
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    border: 7px solid #28aef9;
+    box-sizing: border-box;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.front{
+    transform: translateZ(125px) rotateY(0deg);
+    background-image: none;
+    background-size: 100%;
+}
+.left{
+    transform: translateX(-125px) rotateY(270deg);
+    background-image: none;
+    background-size: 100%;
+}
+.right{
+    transform: translateX(125px) rotateY(-270deg);
+    background-image: none;
+    background-size: 100%;
+}
+.back{
+    transform: translateZ(-125px) rotateY(180deg); 
+    background-image: none;
+    background-size: 100%;
+    tra
+}
+.top{
+    transform: translateY(125px) rotateX(90deg);
+    background-image: none;
+    background-size: 100%;
+}
+.floor{
+    transform: translateY(-125px) rotateX(-90deg);
+    background-image: none;
+    background-size: 100%;
+}
+.face>div{
+    background-color: #28aef9;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 20px;
+}
+.front>div{
+    top: 95px;
+    left: 95px;
+}
+.left>div:nth-child(1){
+    top: 15px;
+    left: 15px;    
+}
+.left>div:nth-child(2){
+    top: 95px;
+    left: 95px;    
+}
+.left>div:nth-child(3){
+    bottom: 15px;
+    right: 15px;    
+}
+.right>div:nth-child(1){
+    top: 15px;
+    left: 15px;    
+}
+.right>div:nth-child(2){
+    top: 97.5px;
+    left: 97.5px;    
+}
+.right>div:nth-child(3){
+    bottom: 15px;
+    right: 15px;    
+}
+.right>div:nth-child(4){
+    bottom: 15px;
+    left: 15px;    
+}
+.right>div:nth-child(5){
+    top: 15px;
+    right: 15px;    
+}
+.back>div:nth-child(1){
+    top: 15px;
+    left: 15px;    
+}
+.back>div:nth-child(2){
+    bottom: 15px;
+    right: 15px;    
+}
+.top>div:nth-child(1){
+    top: 15px;
+    left: 15px;    
+}
+.top>div:nth-child(2){
+    bottom: 15px;
+    right: 15px;    
+}
+.top>div:nth-child(3){
+    bottom: 15px;
+    left: 15px;    
+}
+.top>div:nth-child(4){
+    top: 15px;
+    right: 15px;
+}
+.floor>div:nth-child(1){
+    top: 15px;
+    left: 15px;    
+}
+.floor>div:nth-child(2){
+    top: 97.5px;
+    left: 15px;    
+}
+.floor>div:nth-child(3){
+    bottom: 15px;
+    left: 15px;    
+}
+.floor>div:nth-child(4){
+    top: 15px;
+    right: 15px;    
+}
+.floor>div:nth-child(5){
+    top: 97.5px;
+    right: 15px;    
+}
+.floor>div:nth-child(6){
+    bottom: 15px;
+    right: 15px;    
+}
